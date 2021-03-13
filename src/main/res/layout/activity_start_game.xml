@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="81dp">
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/multi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+            <TextView
+                    android:layout_width="158dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:background="@android:color/holo_blue_light"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:id="@+id/score" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:id="@+id/rest"
+                    android:textColor="@android:color/holo_blue_dark" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:"
+                        android:textColor="@android:color/holo_purple"
+                        android:textStyle="bold"
+                        android:textSize="40sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textColor="@android:color/holo_purple"
+                        android:textStyle="bold"
+                        android:id="@+id/count"
+                        android:textSize="40sp"/>
+                    </LinearLayout>
+                <Button
+                    android:id="@+id/soulation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/holo_orange_dark"
+                    android:textSize="33sp" />
+
+                <EditText
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:id="@+id/input"
+                          android:background="@android:color/black"
+                          android:layout_marginTop="20dp"
+                          android:inputType="number"
+                          android:textColor="@android:color/white"
+                          android:textColorHint="@android:color/white"
+                          android:textSize="30sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="30sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circlebutton"
+                        android:gravity="center"
+                        android:text=""
+                        android:id="@+id/oneDigit"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="50sp" />
+
+                    <TextView
+                        android:layout_width="50sp"
+                        android:layout_height="40sp"
+                        android:layout_marginLeft="10sp"
+                        android:background="@drawable/squarebutton"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:background="@drawable/circlebutton"
+                        android:gravity="center"
+                        android:id="@+id/twoDigit"
+                        android:text=""
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="50dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:text=""
+                    android:background="@android:color/holo_blue_light"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

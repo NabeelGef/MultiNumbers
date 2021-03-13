@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="81dp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting_Game"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/sound"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@drawable/language"
+                android:id="@+id/lang"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/language"
+                android:layout_marginLeft="10sp"
+                android:textSize="25sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="10sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:id="@+id/hardLevel"
+            android:textSize="30sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hard"
+            android:textSize="15sp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:id="@+id/normal"
+                android:textSize="15sp"
+                android:layout_marginStart="50sp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40sp"
+                android:id="@+id/easy"
+                android:textColorHint="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginStart="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
